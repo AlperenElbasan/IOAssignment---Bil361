@@ -24,14 +24,6 @@ public class IOAssignmentEasy {
 		char c = keyboard.nextLine().charAt(0);
 		
 		for(int time=1; time < FINISH; time++){
-			if(c == 'a' || c == 'A')
-				Q1(time);
-			else if(c == 'b' || c == 'B')
-				Q2(time);
-			else{ 
-				System.out.println("Wrong entry! Run again!");
-				System.exit(-1);
-			}
 			for(int j=0; j < arr.length; j++){
 				if(time % arr[j][2] == 0){
 					switch(arr[j][0]){
